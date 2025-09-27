@@ -13,7 +13,13 @@ This project aims to **identify the most relevant risk factors of heart disease 
 The dataset comes from the **Framingham Heart Study** on residents of Framingham, Massachusetts.  
 The objective is to predict whether a patient has a **10-year risk of future coronary heart disease (CHD)**.  
 
-The dataset contains **4,000+ records** with **15 attributes**.  
+---
+
+## 📊 Dataset
+- Source: [Framingham Heart Study Dataset (Kaggle)](https://www.kaggle.com/amanajmera1/framingham-heart-study-dataset/data)  
+- Records: ~4,000 patients  
+- Features: 15 attributes including **age, BMI, cholesterol, blood pressure, smoking status, diabetes, glucose levels**  
+- Target: `10-year risk of coronary heart disease (CHD)` (binary: 1 = Yes, 0 = No)  
 
 ---
 
@@ -34,26 +40,7 @@ The dataset contains **4,000+ records** with **15 attributes**.
 - **Glucose**: glucose level (Continuous)  
 - **10-year CHD risk**: binary (1 = Yes, 0 = No)  
 
----
 
-## 🧠 Machine Learning & Math Perspective  
-This project is a **Supervised Machine Learning classification task**, where the goal is to map input features (**X**) to an output label (**y**) that indicates **CHD risk**.  
-
-Mathematically, the task is to approximate a function:  
-
-\[
-f: X \to y
-\]
-
-Where:  
-- \( X = \{x_1, x_2, ..., x_n\} \) are the features (age, BMI, cholesterol, etc.)  
-- \( y \in \{0, 1\} \) is the target (no risk / risk)  
-
-We apply algorithms such as **Logistic Regression, Decision Trees, Random Forests, or Gradient Boosting** to estimate the probability:  
-
-\[
-P(y = 1 \mid X) = \frac{1}{1 + e^{-(\beta_0 + \beta_1x_1 + \cdots + \beta_nx_n)}}
-\]
 
 Performance is measured using metrics like:  
 - **Accuracy**  
@@ -81,6 +68,32 @@ Performance is measured using metrics like:
 ## 👥 Team Members  
 - **Yacoba Oduro-Yeboah**  
 - **Caleb Fianku Quao**  
+
+---
+
+3. ## 🛠️ Methodology
+1. **Exploratory Data Analysis (EDA)**  
+   - Feature distributions  
+   - Correlation analysis  
+   - Visualization of key trends  
+
+4. **Evaluation Metrics**  
+   - Accuracy  
+   - Precision, Recall, F1-score  
+   - ROC-AUC  
+
+---
+
+## 🧰 Tech Stack
+- **Python**  
+- Libraries: `Pandas`, `NumPy`, `Matplotlib`, `Seaborn`, `Scikit-learn`, `Jupyter Notebook`
+
+---
+
+## 🚀 Results
+- Built models to predict **10-year CHD risk** with solid performance.  
+- Identified key predictors such as **age, smoking status, blood pressure, cholesterol, and diabetes**.  
+- Showcased how **mathematical concepts in ML** translate into practical healthcare applications.  
 
 ---
 
